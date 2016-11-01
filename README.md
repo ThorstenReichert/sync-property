@@ -1,3 +1,5 @@
+![Travis-CI status](https://travis-ci.org/Uninspiriert/sync-property.svg?branch=master)
+
 # sync-property
 
 Simple tool to synchronize properties. 
