@@ -31,4 +31,15 @@ describe('sync', function () {
         expect(obj.prop).to.equal(val);
     });
 
+    it('should sync with nested property', function () {
+        const obj = {
+            sub: {
+                prop: 'prop value'
+            }
+        };
+        property(obj, 'synced').sync(obj, 'sub.prop');
+
+        expect(obj.synced).to.equal(obj.sub.prop);
+    });
+
 });
